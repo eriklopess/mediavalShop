@@ -25,11 +25,7 @@ function App() {
         <Route path='/' element={<InitialPage />}/>
         <Route path='/Login' element={<LoginPage />}/>
         <Route path='/Login/Register' element={<Register />}/>
-        <Route path='/Shop/Swords' element={<Swords />}></Route>
-        <Route path='/Shop/Helmets' element={<Helmets />}></Route>
-        <Route path='/Shop/Greaves' element={<Greaves />}></Route>
-        <Route path='/Shop/Daggers' element={<Daggers />}></Route>
-        <Route path='/Shop/Armors' element={<Armors />}></Route>
+        <Route path='/category/:category' element={<Category />} />
       </Routes>
     </div>
   )
